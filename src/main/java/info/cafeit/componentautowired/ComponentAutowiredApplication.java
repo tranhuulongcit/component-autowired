@@ -15,7 +15,7 @@ public class ComponentAutowiredApplication implements CommandLineRunner {
 		SpringApplication.run(ComponentAutowiredApplication.class, args);
 	}
 
-	//Inject thông qua field bằng cách sử dụng annotation @Autowired
+	//Cách 3: Inject thông qua field bằng cách sử dụng annotation @Autowired
 	@Autowired
 	private Solider solider;
 
@@ -24,7 +24,7 @@ public class ComponentAutowiredApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		solider.setGun(thompson); //các bạn comment dòng này và run lại chương trình để hiểu hơn
+		solider.setGun(thompson); //các bạn comment dòng này và run lại chương trình để hiểu hơn nhé
 		solider.action();
 	}
 }
